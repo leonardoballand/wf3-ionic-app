@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { ProjetsPage } from '../projets/projets';
 
 /**
  * Generated class for the HomePage page.
@@ -15,11 +16,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController, public navParams: NavParams) {
+    this.disableMenu();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
+  }
+
+  disableMenu() {
+    this.menuCtrl.enable(false, 'left-menu');
+  }
+
+  startApp() {
+    console.log("button tapped");
+    this.navCtrl.setRoot(ProjetsPage);
   }
 
 }

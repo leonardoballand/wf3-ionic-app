@@ -11,6 +11,8 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ProjetsPage } from '../pages/projets/projets';
+import { GeolocationPage } from '../pages/geolocation/geolocation';
 
 
 @Component({
@@ -33,12 +35,14 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage },
-      { title: 'Ma première page', component: AuthorPage },
-      { title: 'Cartes', component: CardsPage },
-      { title: 'Inputs', component: InputsPage },
+      { title: 'Mes projets', component: ProjetsPage },
+      { title: 'Géolocalise-moi', component: GeolocationPage }
+      // { title: 'Home', component: HomePage },
+      // { title: 'Hello Ionic', component: HelloIonicPage },
+      // { title: 'My First List', component: ListPage },
+      // { title: 'Ma première page', component: AuthorPage },
+      // { title: 'Cartes', component: CardsPage },
+      // { title: 'Inputs', component: InputsPage },
     ];
   }
 

@@ -14,3 +14,38 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+$primaryColor: color($colors, primary);
+
+#left-menu {
+
+    .nav-header {
+
+        .toolbar {
+
+            .toolbar-background {
+                background: #333;
+
+                .title {
+                    .toolbar-title {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-content {
+        background: $primaryColor; // Récupérer une couleur du thème
+
+        .scroll-content {
+            overflow-y: hidden;
+        }
+
+        .item {
+            background: none;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
