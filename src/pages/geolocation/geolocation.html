@@ -14,5 +14,14 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item *ngIf="lat">
+      <h2>Latitude</h2>
+      <h3>{{lat}}</h3>
+    </ion-item>
+    <ion-item *ngIf="lng">
+        <h2>Longitude</h2>
+        <h3>{{lng}}</h3>
+      </ion-item>
+  </ion-list>
 </ion-content>

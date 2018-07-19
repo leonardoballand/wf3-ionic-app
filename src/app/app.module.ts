@@ -24,14 +24,8 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
     ListPage,
-    AuthorPage,
-    CardsPage,
-    InputsPage,
-    HomePage,
-    ProjetsPage,
-    GeolocationPage,
+    ItemDetailsPage,
   ],
   imports: [
     BrowserModule,
@@ -41,12 +35,6 @@ import { GeolocationPage } from '../pages/geolocation/geolocation';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
-    AuthorPage,
-    CardsPage,
-    InputsPage,
     HomePage,
     ProjetsPage,
     GeolocationPage,
