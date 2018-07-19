@@ -1,0 +1,24 @@
+page-cards {
+
+    .card-bkg {
+        position: relative;
+        text-align: center;
+
+        .card-title {
+            position: absolute;
+            top: 36%;
+            font-size: $title-size;
+            width: 100%;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .card-content {
+            font-size: 1em;
+            position: absolute;
+            top: 52%;
+            width: 100%;
+            color: #fff;
+        }
+    }
+}
